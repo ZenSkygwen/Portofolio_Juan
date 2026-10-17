@@ -1,0 +1,654 @@
+﻿<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Portofolio Juan Felix</title>
+  <meta name="description"
+    content="Portofolio Juan Felix Mahasiswa Computer Science di Binus University yang fokus pada data science, web development, dan UI design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Inline style removed â€” all CSS moved to style.css -->
+
+</head>
+
+<body>
+
+  <!-- Background floating shapes -->
+  <div class="bg-shapes" aria-hidden="true">
+    <div class="bg-shape"></div>
+    <div class="bg-shape"></div>
+    <div class="bg-shape"></div>
+  </div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <nav class="container navbar-inner" aria-label="Navigasi utama">
+      <a href="#home" class="logo" id="nav-logo">JF<span class="logo-dot"></span></a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experiences</a></li>
+        <li><a href="#project">Projects</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2" id="themeIcon">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <!-- Left: Content -->
+        <div>
+          <div class="hero-greeting reveal">
+            <span class="wave">👋</span> Hello
+          </div>
+          <h1 class="hero-title reveal reveal-delay-1">
+            I'm <span class="highlight">Juan Felix</span>
+          </h1>
+          <p class="hero-desc reveal reveal-delay-2">
+            Undergraduate<strong style="color: var(--ink);"> Computer Science</strong> student at Binus University
+            passionate about data analysis, visualization and web development.
+          </p>
+          <div class="hero-cta reveal reveal-delay-3">
+            <a href="#project" class="btn btn-primary" id="cta-projects">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              See Projects
+            </a>
+            <a href="#about" class="btn btn-outline" id="cta-about">About Me</a>
+          </div>
+          <div class="hero-stats reveal reveal-delay-4">
+            <div>
+              <div class="hero-stat-value" id="stat-projects">5+</div>
+              <div class="hero-stat-label">Projects</div>
+            </div>
+            <div>
+              <div class="hero-stat-value" id="stat-experience">2+</div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+            <div>
+              <div class="hero-stat-value" id="stat-skills">8</div>
+              <div class="hero-stat-label">Skills</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="hero-image-wrapper reveal-scale">
+          <div class="hero-image-container">
+            <div class="hero-image-bg" aria-hidden="true"></div>
+            <div class="hero-image-bg-2" aria-hidden="true"></div>
+            <!-- GANTI src di bawah dengan foto kamu -->
+            <img src="photo/photo profile.jpeg" alt="Foto Juan Felix" class="hero-image" loading="eager" />
+            <!-- Floating badges (Hanya Teks) -->
+            <div class="float-badge float-badge-1" aria-hidden="true">
+              CS Student
+            </div>
+            <div class="float-badge float-badge-2" aria-hidden="true">
+              Data Enthusiast
+            </div>
+            <div class="float-badge float-badge-3" aria-hidden="true">
+              Developer
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <span class="section-label reveal">About Me</span>
+            <h2 class="section-title reveal reveal-delay-1">Learn, <br />Experiment and keep<span
+                style="background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">improving</span>
+            </h2>
+
+            <div class="about-cards reveal reveal-delay-2">
+              <div class="about-card">
+                <div class="about-card-value">5th Semester</div>
+                <div class="about-card-label">Computer Science</div>
+              </div>
+              <div class="about-card">
+                <div class="about-card-value">Binus</div>
+                <div class="about-card-label">University</div>
+              </div>
+              <div class="about-card">
+                <div class="about-card-value">Data</div>
+                <div class="about-card-label">Enthusiast</div>
+              </div>
+              <div class="about-card">
+                <div class="about-card-value">5+</div>
+                <div class="about-card-label">Projects</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="about-text reveal">
+              <p>
+                I am <strong>Juan Felix</strong>, a 5th-semester Computer Science student at Bina Nusantara University.
+                I am interested in learning everything related to data such as data cleaning, data analysis, and data
+                visualization, to drawing conclusions from the data obtained.
+              </p>
+              <p>
+                Outside the classroom, I am active in campus organizations and frequently participate in competitions
+                and
+                collaborative projects. I learn best by building things and improving along the way.
+              </p>
+            </div>
+
+            <div class="skills-grid reveal reveal-delay-1" aria-label="Keahlian">
+              <span class="skill-tag">HTML & CSS</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">UI Design</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Tableau</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+          <span class="section-label reveal" style="justify-content: center;">Experiences</span>
+          <h2 class="section-title reveal reveal-delay-1">Academic Experience <br />and Organizations</h2>
+        </div>
+
+        <div class="experience-grid">
+          <!-- Academic -->
+          <div class="reveal">
+            <div class="exp-column-header">
+              <div class="exp-column-icon academic"></div>
+              <h3 class="exp-column-title">Academic</h3>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <p class="timeline-date">Jul 2026 - Sep 2026</p>
+                <h4 class="timeline-title">EECSI Conference 2026</h4>
+                <p class="timeline-place">Binus University @Kemanggisan</p>
+                <p class="timeline-desc">Co-authored a group research paper titled "Stress Level Prediction
+                  Using A Benchmarked Machine Learning Algorithm Based on Psychological and Behavioral Factors”</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <p class="timeline-date">Jan 2025 - Jan 2026</p>
+                <h4 class="timeline-title">S-Class 1st Batch Student</h4>
+                <p class="timeline-place">Binus University @Kemanggisan</p>
+                <p class="timeline-desc">Networked with fellow S Class members to build professional connections and
+                  exchange insights</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Organizational -->
+          <div class="reveal reveal-delay-2">
+            <div class="exp-column-header">
+              <div class="exp-column-icon organizational"></div>
+              <h3 class="exp-column-title">Organizational</h3>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot" style="border-color: var(--accent);"></div>
+                <p class="timeline-date">Oct 2025 - Present</p>
+                <h4 class="timeline-title">Chief Officer of Information and Technology</h4>
+                <p class="timeline-place">Binus English Club</p>
+                <p class="timeline-desc">Supervise include overseeing both the Information Technology (IT) and Human
+                  Resource Development (HRD) division in BNEC Kemanggisan</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot" style="border-color: var(--accent);"></div>
+                <p class="timeline-date">Mar 2026 - Jun 2026</p>
+                <h4 class="timeline-title">Project Officer for BNEC Follow Up Cadre Forming </h4>
+                <p class="timeline-place">Binus English Club</p>
+                <p class="timeline-desc">Led and managed a cross-functional team of committee members and staff to
+                  successfully execute a leadership-building event for BNECs prospective steering committee</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot" style="border-color: var(--accent);"></div>
+                <p class="timeline-date">Jun 2025 - Nov 2025</p>
+                <h4 class="timeline-title">Vice Project Officer for BNEC Social Event KMG 2025</h4>
+                <p class="timeline-place">Binus English Club</p>
+                <p class="timeline-desc">Direct coordination between the event and logistics divisions, oversight of
+                  material and facility preparation, and volunteer management to ensure smooth overall event operations
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot" style="border-color: var(--accent);"></div>
+                <p class="timeline-date">Jul 2025 - Oct 2025</p>
+                <h4 class="timeline-title">Coordinator of MIT BNEC New Member Recruitment</h4>
+                <p class="timeline-place">Binus English Club</p>
+                <p class="timeline-desc">Manage recruitment registration systems and candidate communications, including
+                  overseeing registration forms, data tracking, inquiry support, and expo booth operations.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot" style="border-color: var(--accent);"></div>
+                <p class="timeline-date">Mar 2025 - Sep 2025</p>
+                <h4 class="timeline-title">Staff of Information Technology</h4>
+                <p class="timeline-place">Binus English Club</p>
+                <p class="timeline-desc">Learned web development fundamentals using HTML, CSS, JavaScript, and
+                  introductory Laravel</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot" style="border-color: var(--accent);"></div>
+                <p class="timeline-date">Mar 2025 - Sep 2025</p>
+                <h4 class="timeline-title">Volunteer Staff BNEC 33rd Birthday Party</h4>
+                <p class="timeline-place">Binus English Club</p>
+                <p class="timeline-desc">Coordinate pre-event venue layouts and equipment setups, including microphones,
+                  room arrangements, and presentation materials, to ensure everything is ready before the event starts
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="project" class="projects">
+      <div class="container">
+        <div class="projects-header">
+          <div>
+            <span class="section-label reveal">My Projects</span>
+            <h2 class="section-title reveal reveal-delay-1">Featured Projects</h2>
+            <p class="section-desc reveal reveal-delay-2">Some projects I've worked on.</p>
+          </div>
+          <div class="carousel-nav reveal">
+            <button class="carousel-btn" id="prevBtn" type="button" aria-label="Project sebelumnya">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button class="carousel-btn" id="nextBtn" type="button" aria-label="Project berikutnya">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel" id="carousel" tabindex="0" role="region" aria-label="Daftar project">
+          <article class="project-card reveal-scale">
+            <div class="project-card-image" style="background: url('/photo/shipdeckk.png');">
+              <span class="project-tag">Web Programming</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Luxury Ship Sales</h3>
+              <p class="project-card-desc">A static web project built using HTML, CSS, and JavaScript to display and
+                provide
+                information about different ship models, emphasizing clean design, responsive layouts, and basic user
+                interactivity.</p>
+              <p class="project-card-tech">HTML CSS JavaScript</p>
+              <a href="https://shipdeckk-lo6vrbns0-zen-skygwen.vercel.app" class="project-card-link" id="project-link-1"
+                target="_blank" rel="noopener noreferrer">
+                See Project
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal-scale">
+            <div class="project-card-image" style="background: url('/photo/0.png');">
+              <span class="project-tag">Data Engineering and Visualization</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Pizza Sales Report</h3>
+              <p class="project-card-desc">This project focuses on data preprocessing using Pentaho Data Integration to
+                extract the csv
+                (taken from kaggle), transform, and load to sql and then analyzed using power BI</p>
+              <p class="project-card-tech">Pentaho_Data_Integration SQL Power_BI</p>
+              <a href="https://drive.google.com/file/d/1hYivQV-q2w-6nOdPk__HEmNRovk4OaOc/view?usp=drivesdk"
+                class="project-card-link" id="project-link-2">
+                See Project
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal-scale">
+            <div class="project-card-image" style="background: url(/photo/photo_tableau.jpeg);">
+              <span class="project-tag">Data Visualization</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Company Profit Visualization</h3>
+              <p class="project-card-desc">This group project uses CSV data from Kaggle to analyze the financial and
+                sales
+                performance of a European company using Tableau.
+              </p>
+              <p class="project-card-tech">Tableau</p>
+              <a href="https://public.tableau.com/app/profile/shane.sutjipto/viz/Duplicate-Group7-DataVisualization/DashboardFinal"
+                class="project-card-link" id="project-link-3">
+                See Project
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal-scale">
+            <div class="project-card-image" style="background: url('/photo/streamlit.png');">
+              <span class="project-tag">Data Analysis</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Youtuber subscribers Analysis</h3>
+              <p class="project-card-desc">This project analyzes youtube subscribers data to understand trends and
+                patterns also
+                predicting the amount of subscribers in the future.
+                The analysis was conducted using Python and various data science libraries.</p>
+              <p class="project-card-tech">Python Machine_Learning</p>
+              <a href="https://youtubersubscribersanalysis-vxpibuyqpywjbbp3nbwdsk.streamlit.app/"
+                class="project-card-link" id="project-link-4">
+                See Project
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal-scale">
+            <div class="project-card-image" style="background: url('/photo/research.png');">
+              <span class="project-tag">Research Methodology</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Stress Level Prediction</h3>
+              <p class="project-card-desc">In this research, we use a dataset from Kaggle to predict an individual's
+                stress level using a
+                logistic regression algorithm based on 20 features covering psychological, environmental, physiological,
+                social, and academic factors.</p>
+              <p class="project-card-tech">Python Machine_Learning</p>
+              <a href="https://drive.google.com/file/d/16D6kTT0R1WXWhuljLovktkCToJ6UaZI_/view?usp=sharing"
+                class="project-card-link" id="project-link-5">
+                See Project
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal-scale">
+            <div class="project-card-image" style="background: url('/photo/data_analitics.png');">
+              <span class="project-tag">Data Analytics</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Customer Shop Data Analytics</h3>
+              <p class="project-card-desc">In this project, we performed data cleaning and data formatting, followed by
+                an
+                Exploratory Data Analysis (EDA) process to uncover hidden insights within the dataset.</p>
+              <p class="project-card-tech">Python</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">JF<span class="logo-dot"></span></div>
+          <p class="footer-desc">Computer Science student at Binus University
+            passionate about data analysis, visualization and web development.</p>
+          <div class="footer-social">
+            <a href="https://github.com/ZenSkygwen" class="social-link" aria-label="GitHub" id="social-github">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/juan-felix628/" class="social-link" aria-label="LinkedIn"
+              id="social-linkedin">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/juan_flx_/" class="social-link" aria-label="Instagram"
+              id="social-instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+            <a href="mailto:juanfelix62817@gmail.com" class="social-link" aria-label="Email" id="social-email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Projects</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Kontak</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:juanfelix62817@gmail.com">juanfelix62817@gmail.com</a></li>
+            <li><a href="#">Jakarta Barat, Indonesia</a></li>
+            <li><a href="#">Binus University</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>2026 Juan Felix. Built with <span>love</span></p>
+        <p>Designed & Developed by Juan Felix</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ==================
+         SCROLL REVEAL
+         ================== */
+      var revealElements = document.querySelectorAll('.reveal, .reveal-scale');
+      var revealObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      revealElements.forEach(function (el) { revealObserver.observe(el); });
+
+      /* ==================
+         NAVBAR SCROLL STATE
+         ================== */
+      var navbar = document.getElementById('navbar');
+      var scrollProgress = document.getElementById('scrollProgress');
+
+      function onScroll() {
+        var scrollTop = window.scrollY || document.documentElement.scrollTop;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+        scrollProgress.style.width = progress + '%';
+        navbar.classList.toggle('scrolled', scrollTop > 20);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      /* ==================
+         ACTIVE NAV LINK
+         ================== */
+      var sections = document.querySelectorAll('section[id]');
+      var navLinks = document.querySelectorAll('.nav-links a');
+
+      var sectionObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            navLinks.forEach(function (link) {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+            });
+          }
+        });
+      }, { threshold: 0.3, rootMargin: '-80px 0px -50% 0px' });
+
+      sections.forEach(function (section) { sectionObserver.observe(section); });
+
+      /* ==================
+         MOBILE MENU
+         ================== */
+      var mobileBtn = document.getElementById('mobileMenuBtn');
+      var navLinksEl = document.getElementById('navLinks');
+
+      mobileBtn.addEventListener('click', function () {
+        var isOpen = navLinksEl.classList.toggle('open');
+        mobileBtn.classList.toggle('open');
+        mobileBtn.setAttribute('aria-expanded', isOpen);
+      });
+
+      navLinksEl.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          navLinksEl.classList.remove('open');
+          mobileBtn.classList.remove('open');
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      /* ==================
+         THEME TOGGLE
+         ================== */
+      var themeToggle = document.getElementById('themeToggle');
+      var themeIcon = document.getElementById('themeIcon');
+      var root = document.documentElement;
+
+      var savedTheme = localStorage.getItem('theme');
+      if (savedTheme) { root.setAttribute('data-theme', savedTheme); }
+
+      function updateIcon() {
+        var isDark = root.getAttribute('data-theme') === 'dark';
+        themeIcon.innerHTML = isDark
+          ? '<path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>'
+          : '<path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>';
+      }
+      updateIcon();
+
+      themeToggle.addEventListener('click', function () {
+        var isDark = root.getAttribute('data-theme') === 'dark';
+        var newTheme = isDark ? 'light' : 'dark';
+        root.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon();
+      });
+
+      /* ==================
+         CURSOR GLOW
+         ================== */
+      var cursorGlow = document.getElementById('cursorGlow');
+      if (window.matchMedia('(pointer: fine)').matches) {
+        document.addEventListener('mousemove', function (e) {
+          cursorGlow.style.left = e.clientX + 'px';
+          cursorGlow.style.top = e.clientY + 'px';
+          cursorGlow.style.opacity = '1';
+        });
+        document.addEventListener('mouseleave', function () {
+          cursorGlow.style.opacity = '0';
+        });
+      }
+
+      /* ==================
+         CAROUSEL
+         ================== */
+      var carousel = document.getElementById('carousel');
+      var prev = document.getElementById('prevBtn');
+      var next = document.getElementById('nextBtn');
+
+      function step() {
+        var card = carousel.firstElementChild;
+        return card ? card.getBoundingClientRect().width + 24 : 300;
+      }
+      function updateCarousel() {
+        var max = carousel.scrollWidth - carousel.clientWidth - 2;
+        prev.disabled = carousel.scrollLeft <= 2;
+        next.disabled = carousel.scrollLeft >= max;
+      }
+      prev.addEventListener('click', function () { carousel.scrollBy({ left: -step(), behavior: 'smooth' }); });
+      next.addEventListener('click', function () { carousel.scrollBy({ left: step(), behavior: 'smooth' }); });
+      carousel.addEventListener('scroll', updateCarousel, { passive: true });
+      window.addEventListener('resize', updateCarousel);
+      carousel.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight') { e.preventDefault(); next.click(); }
+        if (e.key === 'ArrowLeft') { e.preventDefault(); prev.click(); }
+      });
+      updateCarousel();
+
+      /* ==================
+         SMOOTH ANCHOR LINKS
+         ================== */
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          var target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+    })();
+  </script>
+</body>
+
+</html>
