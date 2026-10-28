@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id" data-theme="dark">
 
 <head>
@@ -91,7 +91,7 @@
               <div class="hero-stat-label">Years Experience</div>
             </div>
             <div>
-              <div class="hero-stat-value" id="stat-skills">8</div>
+              <div class="hero-stat-value" id="stat-skills">7</div>
               <div class="hero-stat-label">Skills</div>
             </div>
           </div>
@@ -164,13 +164,13 @@
             </div>
 
             <div class="skills-grid reveal reveal-delay-1" aria-label="Keahlian">
-              <span class="skill-tag">HTML & CSS</span>
               <span class="skill-tag">SQL</span>
-              <span class="skill-tag">C</span>
               <span class="skill-tag">Python</span>
               <span class="skill-tag">UI Design</span>
               <span class="skill-tag">Power BI</span>
               <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">Excel</span>
+              <span class="skill-tag">Pentaho</span>
             </div>
           </div>
         </div>
@@ -301,125 +301,158 @@
         </div>
 
         <div class="carousel" id="carousel" tabindex="0" role="region" aria-label="Daftar project">
+
+          <!-- CARD 1: Simple ETL + Visualization -->
           <article class="project-card reveal-scale">
-            <div class="project-card-image" style="background: url('/photo/shipdeckk.png');">
-              <span class="project-tag">Web Programming</span>
+            <div class="project-card-image"
+              style="background-image: url('See%20Project/Simple%20ETL%20%2B%20Visualization/%233%20Power_BI%20Overview.png'); background-size: cover; background-position: center;">
+              <span class="project-tag">Data Engineering &amp; Visualization</span>
             </div>
             <div class="project-card-body">
-              <h3 class="project-card-title">Luxury Ship Sales</h3>
-              <p class="project-card-desc">A static web project built using HTML, CSS, and JavaScript to display and
-                provide
-                information about different ship models, emphasizing clean design, responsive layouts, and basic user
-                interactivity.</p>
-              <p class="project-card-tech">HTML CSS JavaScript</p>
-              <a href="https://shipdeckk-lo6vrbns0-zen-skygwen.vercel.app" class="project-card-link" id="project-link-1"
-                target="_blank" rel="noopener noreferrer">
-                See Project
+              <h3 class="project-card-title">Simple ETL + Visualization</h3>
+              <p class="project-card-desc">An end-to-end ETL pipeline extracting raw CSV data, transforming it via
+                PostgreSQL queries, and visualizing insights through an interactive Power BI dashboard.</p>
+              <p class="project-card-tech">CSV · PostgreSQL · Power BI</p>
+              <button class="project-card-link see-more-btn" id="project-link-1" data-project-id="0"
+                aria-label="See More about Simple ETL + Visualization">
+                See More
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                   stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+              </button>
             </div>
           </article>
 
+          <!-- CARD 2: Excel Dashboard Analyst -->
           <article class="project-card reveal-scale">
-            <div class="project-card-image" style="background: url('/photo/0.png');">
-              <span class="project-tag">Data Engineering and Visualization</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-card-title">Pizza Sales Report</h3>
-              <p class="project-card-desc">This project focuses on data preprocessing using Pentaho Data Integration to
-                extract the csv
-                (taken from kaggle), transform, and load to sql and then analyzed using power BI</p>
-              <p class="project-card-tech">Pentaho_Data_Integration SQL Power_BI</p>
-              <a href="https://drive.google.com/file/d/1hYivQV-q2w-6nOdPk__HEmNRovk4OaOc/view?usp=drivesdk"
-                class="project-card-link" id="project-link-2">
-                See Project
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                  stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card reveal-scale">
-            <div class="project-card-image" style="background: url(/photo/photo_tableau.jpeg);">
-              <span class="project-tag">Data Visualization</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-card-title">Company Profit Visualization</h3>
-              <p class="project-card-desc">This group project uses CSV data from Kaggle to analyze the financial and
-                sales
-                performance of a European company using Tableau.
-              </p>
-              <p class="project-card-tech">Tableau</p>
-              <a href="https://public.tableau.com/app/profile/shane.sutjipto/viz/Duplicate-Group7-DataVisualization/DashboardFinal"
-                class="project-card-link" id="project-link-3">
-                See Project
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                  stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card reveal-scale">
-            <div class="project-card-image" style="background: url('/photo/streamlit.png');">
-              <span class="project-tag">Data Analysis</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-card-title">Youtuber subscribers Analysis</h3>
-              <p class="project-card-desc">This project analyzes youtube subscribers data to understand trends and
-                patterns also
-                predicting the amount of subscribers in the future.
-                The analysis was conducted using Python and various data science libraries.</p>
-              <p class="project-card-tech">Python Machine_Learning</p>
-              <a href="https://youtubersubscribersanalysis-vxpibuyqpywjbbp3nbwdsk.streamlit.app/"
-                class="project-card-link" id="project-link-4">
-                See Project
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                  stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card reveal-scale">
-            <div class="project-card-image" style="background: url('/photo/research.png');">
-              <span class="project-tag">Research Methodology</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-card-title">Stress Level Prediction</h3>
-              <p class="project-card-desc">In this research, we use a dataset from Kaggle to predict an individual's
-                stress level using a
-                logistic regression algorithm based on 20 features covering psychological, environmental, physiological,
-                social, and academic factors.</p>
-              <p class="project-card-tech">Python Machine_Learning</p>
-              <a href="https://drive.google.com/file/d/16D6kTT0R1WXWhuljLovktkCToJ6UaZI_/view?usp=sharing"
-                class="project-card-link" id="project-link-5">
-                See Project
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                  stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card reveal-scale">
-            <div class="project-card-image" style="background: url('/photo/data_analitics.png');">
+            <div class="project-card-image"
+              style="background-image: url('See%20Project/Excel%20Dashboard%20Analyst/%233%20creating%20visualization%20and%20insight.png'); background-size: cover; background-position: center;">
               <span class="project-tag">Data Analytics</span>
             </div>
             <div class="project-card-body">
-              <h3 class="project-card-title">Customer Shop Data Analytics</h3>
-              <p class="project-card-desc">In this project, we performed data cleaning and data formatting, followed by
-                an
-                Exploratory Data Analysis (EDA) process to uncover hidden insights within the dataset.</p>
-              <p class="project-card-tech">Python</p>
+              <h3 class="project-card-title">Excel Dashboard Analyst</h3>
+              <p class="project-card-desc">Data analysis and interactive dashboard creation using Microsoft Excel —
+                covering data overview, pivot table construction, and rich visualization with insights.</p>
+              <p class="project-card-tech">Microsoft Excel · Pivot Table · Dashboard</p>
+              <button class="project-card-link see-more-btn" id="project-link-2" data-project-id="1"
+                aria-label="See More about Excel Dashboard Analyst">
+                See More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- CARD 3: End to End Data Analysis -->
+          <article class="project-card reveal-scale">
+            <div class="project-card-image"
+              style="background-image: url('See%20Project/End%20to%20End%20Data%20Analysis/%235%20Overview%20Marketing%20Analysis%20Dashboard.png'); background-size: cover; background-position: center;">
+              <span class="project-tag">End-to-End Analytics</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">End to End Data Analysis</h3>
+              <p class="project-card-desc">Full pipeline: SQL Server data loading &amp; querying → Python NLP (NLTK)
+                sentiment analysis → joined model → Power BI marketing &amp; product dashboards.</p>
+              <p class="project-card-tech">SQL Server · Python · NLTK · Power BI</p>
+              <button class="project-card-link see-more-btn" id="project-link-3" data-project-id="2"
+                aria-label="See More about End to End Data Analysis">
+                See More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- CARD 4: Data Cleaning and EDA using Python -->
+          <article class="project-card reveal-scale">
+            <div class="project-card-image"
+              style="background-image: url('See%20Project/Data%20Cleaning%20and%20EDA%20using%20Python/%233%20plotting%20to%20see%20distributions%20and%20outliers.png'); background-size: cover; background-position: center;">
+              <span class="project-tag">Data Cleaning &amp; EDA</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Data Cleaning &amp; EDA (Python)</h3>
+              <p class="project-card-desc">Cleaning raw XLSX data, performing exploratory analysis with distribution
+                plots, detecting and handling outliers using the IQR method, and drawing meaningful conclusions.</p>
+              <p class="project-card-tech">Python · Pandas · Matplotlib · Seaborn</p>
+              <button class="project-card-link see-more-btn" id="project-link-4" data-project-id="3"
+                aria-label="See More about Data Cleaning and EDA using Python">
+                See More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- CARD 5: Pentaho + Visualization -->
+          <article class="project-card reveal-scale">
+            <div class="project-card-image"
+              style="background-image: url('See%20Project/Pentaho%20%2B%20Visualization/%234%20Power%20BI%20viz%201.png'); background-size: cover; background-position: center;">
+              <span class="project-tag">ETL &amp; BI</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Pentaho + Visualization</h3>
+              <p class="project-card-desc">ETL workflow using Pentaho Data Integration: extracting from XLSX, data
+                cleaning &amp; preprocessing, loading into MySQL, then building rich Power BI dashboards.</p>
+              <p class="project-card-tech">Pentaho · MySQL · Power BI</p>
+              <button class="project-card-link see-more-btn" id="project-link-5" data-project-id="4"
+                aria-label="See More about Pentaho + Visualization">
+                See More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- CARD 6: Python Prediction Dashboard -->
+          <article class="project-card reveal-scale">
+            <div class="project-card-image"
+              style="background-image: url('See%20Project/Python%20Prediction%20Dashboard/%233%20Oveview%20dashboard.png'); background-size: cover; background-position: center;">
+              <span class="project-tag">ML &amp; Dashboard</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Python Prediction Dashboard</h3>
+              <p class="project-card-desc">Machine learning prediction model built with Python and deployed as an
+                interactive Streamlit dashboard, enabling real-time data input and outcome forecasting.</p>
+              <p class="project-card-tech">Python · Scikit-learn · Streamlit</p>
+              <button class="project-card-link see-more-btn" id="project-link-6" data-project-id="5"
+                aria-label="See More about Python Prediction Dashboard">
+                See More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- CARD 7: Revenue & Profit Analysis Dashboard -->
+          <article class="project-card reveal-scale">
+            <div class="project-card-image"
+              style="background-image: url('See%20Project/Revenue%20%26%20Profit%20Analysis%20Dashboard/%232%20Dashboard%20Final.png'); background-size: cover; background-position: center;">
+              <span class="project-tag">Data Visualization</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Revenue &amp; Profit Analysis</h3>
+              <p class="project-card-desc">Group project analyzing a company's revenue &amp; profit data from CSV,
+                building a comprehensive Tableau dashboard with multi-page interactive financial visualizations.</p>
+              <p class="project-card-tech">CSV · Tableau</p>
+              <button class="project-card-link see-more-btn" id="project-link-7" data-project-id="6"
+                aria-label="See More about Revenue and Profit Analysis Dashboard">
+                See More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
             </div>
           </article>
 
@@ -427,6 +460,58 @@
       </div>
     </section>
   </main>
+
+  <!-- ==========================================
+       PROJECT DOCUMENTATION MODAL
+       ========================================== -->
+  <div class="proj-modal-overlay" id="projModalOverlay" role="dialog" aria-modal="true" aria-labelledby="projModalTitle"
+    hidden>
+    <div class="proj-modal" id="projModal">
+      <!-- Close button -->
+      <button class="proj-modal-close" id="projModalClose" aria-label="Close modal">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Modal header -->
+      <div class="proj-modal-header">
+        <span class="proj-modal-tag" id="projModalTag"></span>
+        <h2 class="proj-modal-title" id="projModalTitle"></h2>
+      </div>
+
+      <!-- Carousel -->
+      <div class="proj-doc-carousel" id="projDocCarousel">
+        <div class="proj-doc-track" id="projDocTrack">
+          <!-- Slides injected by JS -->
+        </div>
+
+        <!-- Arrow buttons -->
+        <button class="proj-doc-arrow proj-doc-arrow-left" id="docPrev" aria-label="Previous step">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="proj-doc-arrow proj-doc-arrow-right" id="docNext" aria-label="Next step">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        <!-- Dot indicators -->
+        <div class="proj-doc-dots" id="projDocDots"></div>
+      </div>
+
+      <!-- Step description -->
+      <div class="proj-doc-info">
+        <div class="proj-doc-step-badge" id="projDocStepBadge">Step 1</div>
+        <p class="proj-doc-step-desc" id="projDocStepDesc"></p>
+      </div>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -609,7 +694,7 @@
       }
 
       /* ==================
-         CAROUSEL
+         MAIN CAROUSEL (project cards)
          ================== */
       var carousel = document.getElementById('carousel');
       var prev = document.getElementById('prevBtn');
@@ -633,6 +718,281 @@
         if (e.key === 'ArrowLeft') { e.preventDefault(); prev.click(); }
       });
       updateCarousel();
+
+      /* ==================
+         PROJECT MODAL & DOC CAROUSEL
+         ================== */
+      var projects = [
+        {
+          title: 'Simple ETL + Visualization',
+          tag: 'Data Engineering & Visualization',
+          steps: [
+            {
+              img: 'See%20Project/Simple%20ETL%20%2B%20Visualization/%231%20CSV_Overview.png',
+              desc: 'Step 1 — Raw CSV Overview: Reviewing the raw dataset structure, column types, and initial data quality before any transformation is applied.'
+            },
+            {
+              img: 'See%20Project/Simple%20ETL%20%2B%20Visualization/%232%20Query_Overview_PostgreSQL.png',
+              desc: 'Step 2 — PostgreSQL Querying: Loading the CSV into PostgreSQL and writing transformation queries to clean, filter, and aggregate the data.'
+            },
+            {
+              img: 'See%20Project/Simple%20ETL%20%2B%20Visualization/%233%20Power_BI%20Overview.png',
+              desc: 'Step 3 — Power BI Dashboard: Publishing the transformed data to Power BI and building an interactive dashboard with key KPIs and visual insights.'
+            }
+          ]
+        },
+        {
+          title: 'Excel Dashboard Analyst',
+          tag: 'Data Analytics',
+          steps: [
+            {
+              img: 'See%20Project/Excel%20Dashboard%20Analyst/overview%20data%20%231.png',
+              desc: 'Step 1 — Data Overview: Examining the raw dataset in Excel — understanding columns, data types, and identifying areas that need cleaning.'
+            },
+            {
+              img: 'See%20Project/Excel%20Dashboard%20Analyst/creating%20pivot%20table%20%232.png',
+              desc: 'Step 2 — Pivot Table Construction: Building dynamic pivot tables to summarize and cross-tabulate key metrics for deeper analysis.'
+            },
+            {
+              img: 'See%20Project/Excel%20Dashboard%20Analyst/%233%20creating%20visualization%20and%20insight.png',
+              desc: 'Step 3 — Visualization & Insight: Designing charts and graphs within Excel to turn aggregated data into clear, actionable business insights.',
+              link: {
+                label: '📊 Decathlon Dashboard Analysis.xlsx ↗',
+                url: 'https://1drv.ms/x/c/7d9646346b906579/IQC2YhZc87nHRZGT9RwNkTf5AcMlQ6IBq6ITdWABbC4oLcg?e=m4wyrh'
+              }
+            }
+          ]
+        },
+        {
+          title: 'End to End Data Analysis',
+          tag: 'End-to-End Analytics',
+          steps: [
+            {
+              img: 'See%20Project/End%20to%20End%20Data%20Analysis/%231%20SQL%20Server%20Load%20and%20Query.png',
+              desc: 'Step 1 — SQL Server Load & Query: Importing raw data into SQL Server and running structured queries to prepare it for analytical processing.'
+            },
+            {
+              img: 'See%20Project/End%20to%20End%20Data%20Analysis/%232%20Overview%20python%20using%20nltk%20for%20sentiment%20analysis.png',
+              desc: 'Step 2 — Python NLP (NLTK): Applying Natural Language Processing with the NLTK library to perform sentiment analysis on textual data.'
+            },
+            {
+              img: 'See%20Project/End%20to%20End%20Data%20Analysis/%233%20Overview%20Output%20from%20sentiment%20analysis.png',
+              desc: 'Step 3 — Sentiment Output: Reviewing the classified sentiment results (positive / neutral / negative) and validating their accuracy.'
+            },
+            {
+              img: 'See%20Project/End%20to%20End%20Data%20Analysis/%234%20Overview%20joining%20sentiment%20table%20with%20another%20model.png',
+              desc: 'Step 4 — Joining Tables: Merging the sentiment results with other data models to enrich the dataset for dashboard-level analysis.'
+            },
+            {
+              img: 'See%20Project/End%20to%20End%20Data%20Analysis/%235%20Overview%20Marketing%20Analysis%20Dashboard.png',
+              desc: 'Step 5 — Marketing Dashboard: Building a Power BI marketing analysis dashboard that surfaces campaign performance and customer engagement metrics.'
+            },
+            {
+              img: 'See%20Project/End%20to%20End%20Data%20Analysis/%236%20Overview%20Product%20Analysis%20Dashboard.png',
+              desc: 'Step 6 — Product Dashboard: A complementary Power BI product analysis dashboard highlighting sales trends, top SKUs, and product-level KPIs.'
+            }
+          ]
+        },
+        {
+          title: 'Data Cleaning & EDA (Python)',
+          tag: 'Data Cleaning & EDA',
+          steps: [
+            {
+              img: 'See%20Project/Data%20Cleaning%20and%20EDA%20using%20Python/%231%20xlsx%20preview.png',
+              desc: 'Step 1 — XLSX Preview: Loading and previewing the Excel file to understand its schema, missing values, and data types before cleaning.'
+            },
+            {
+              img: 'See%20Project/Data%20Cleaning%20and%20EDA%20using%20Python/%232%20overview%20cleaning%20data.png',
+              desc: 'Step 2 — Data Cleaning: Removing duplicates, fixing inconsistent formats, and handling null values to produce a clean, reliable dataset.'
+            },
+            {
+              img: 'See%20Project/Data%20Cleaning%20and%20EDA%20using%20Python/%233%20plotting%20to%20see%20distributions%20and%20outliers.png',
+              desc: 'Step 3 — Distribution & Outlier Plots: Visualizing feature distributions using histograms and box plots to identify skewness and outliers.'
+            },
+            {
+              img: 'See%20Project/Data%20Cleaning%20and%20EDA%20using%20Python/%234%20after%20handling%20outlier%20with%20iqr%20method.png',
+              desc: 'Step 4 — IQR Outlier Handling: Applying the Interquartile Range (IQR) method to cap or remove outliers, resulting in a more robust dataset.'
+            }
+          ]
+        },
+        {
+          title: 'Pentaho + Visualization',
+          tag: 'ETL & BI',
+          steps: [
+            {
+              img: 'See%20Project/Pentaho%20%2B%20Visualization/%231%20Overview%20xslx.png',
+              desc: 'Step 1 — Source XLSX Overview: Reviewing the raw Excel source file that serves as the input for the Pentaho ETL pipeline.'
+            },
+            {
+              img: 'See%20Project/Pentaho%20%2B%20Visualization/%232%20data%20cleaning%20and%20pre%20processing.png',
+              desc: 'Step 2 — Pentaho Cleaning & Pre-processing: Using Pentaho Data Integration transformations to clean, standardize, and enrich the raw data.'
+            },
+            {
+              img: 'See%20Project/Pentaho%20%2B%20Visualization/%233%20store%20in%20mysql.png',
+              desc: 'Step 3 — Store in MySQL: Loading the processed data into a MySQL database as the analytical data warehouse for reporting.'
+            },
+            {
+              img: 'See%20Project/Pentaho%20%2B%20Visualization/%234%20Power%20BI%20viz%201.png',
+              desc: 'Step 4 — Power BI Dashboard (Part 1): First page of the Power BI report showing high-level KPIs and sales performance metrics.'
+            },
+            {
+              img: 'See%20Project/Pentaho%20%2B%20Visualization/%235%20Power%20BI%20viz%202.png',
+              desc: 'Step 5 — Power BI Dashboard (Part 2): Second page diving deeper into regional breakdowns and trend analysis over time.'
+            }
+          ]
+        },
+        {
+          title: 'Python Prediction Dashboard',
+          tag: 'ML & Dashboard',
+          steps: [
+            {
+              img: 'See%20Project/Python%20Prediction%20Dashboard/%231%20overview%20csv.png',
+              desc: 'Step 1 — CSV Data Overview: Loading and inspecting the dataset that will be used to train the machine learning prediction model.'
+            },
+            {
+              img: 'See%20Project/Python%20Prediction%20Dashboard/%232%20overview%20dashboard%20making%20(streamlit).png',
+              desc: 'Step 2 — Building the Streamlit Dashboard: Coding the interactive dashboard interface in Python using Streamlit for real-time user inputs.'
+            },
+            {
+              img: 'See%20Project/Python%20Prediction%20Dashboard/%233%20Oveview%20dashboard.png',
+              desc: 'Step 3 — Final Dashboard: The deployed Streamlit application allowing users to input parameters and receive ML-powered predictions instantly.',
+              link: {
+                label: '🚀 Open Streamlit Dashboard ↗',
+                url: 'https://youtubersubscribersanalysis-vxpibuyqpywjbbp3nbwdsk.streamlit.app/'
+              }
+            }
+          ]
+        },
+        {
+          title: 'Revenue & Profit Analysis',
+          tag: 'Data Visualization',
+          steps: [
+            {
+              img: 'See%20Project/Revenue%20%26%20Profit%20Analysis%20Dashboard/%231%20overview%20csv.png',
+              desc: 'Step 1 — Source CSV Overview: Reviewing the company revenue and profit dataset from CSV before importing it into Tableau for visualization.'
+            },
+            {
+              img: 'See%20Project/Revenue%20%26%20Profit%20Analysis%20Dashboard/%232%20Dashboard%20Final.png',
+              desc: 'Step 2 — Tableau Dashboard (Final): The completed Tableau dashboard summarizing key financial KPIs, profit margins, and revenue trends.'
+            },
+            {
+              img: 'See%20Project/Revenue%20%26%20Profit%20Analysis%20Dashboard/%233%20Group%207%20-%20Data%20Visualization%20(1).png',
+              desc: 'Step 3 — Detailed Visualization Page 1: First detailed Tableau story page exploring revenue distribution by region and product category.'
+            },
+            {
+              img: 'See%20Project/Revenue%20%26%20Profit%20Analysis%20Dashboard/%234%20Group%207%20-%20Data%20Visualization%20(2).png',
+              desc: 'Step 4 — Detailed Visualization Page 2: Second story page analyzing profit trends over time and comparative performance across business units.'
+            }
+          ]
+        }
+      ];
+
+      var overlay = document.getElementById('projModalOverlay');
+      var modalEl = document.getElementById('projModal');
+      var closeBtn = document.getElementById('projModalClose');
+      var modalTag = document.getElementById('projModalTag');
+      var modalTitle = document.getElementById('projModalTitle');
+      var docTrack = document.getElementById('projDocTrack');
+      var docDots = document.getElementById('projDocDots');
+      var docPrev = document.getElementById('docPrev');
+      var docNext = document.getElementById('docNext');
+      var stepBadge = document.getElementById('projDocStepBadge');
+      var stepDesc = document.getElementById('projDocStepDesc');
+      var currentStep = 0;
+      var currentSteps = [];
+
+      function buildDocCarousel(steps) {
+        docTrack.innerHTML = '';
+        docDots.innerHTML = '';
+        steps.forEach(function (s, i) {
+          var slide = document.createElement('div');
+          slide.className = 'proj-doc-slide';
+          var img = document.createElement('img');
+          img.src = s.img;
+          img.alt = 'Step ' + (i + 1) + ' documentation';
+          img.loading = 'lazy';
+          slide.appendChild(img);
+          docTrack.appendChild(slide);
+
+          var dot = document.createElement('button');
+          dot.className = 'proj-doc-dot';
+          dot.setAttribute('aria-label', 'Go to step ' + (i + 1));
+          dot.setAttribute('data-idx', i);
+          dot.addEventListener('click', function () { goToStep(parseInt(this.getAttribute('data-idx'))); });
+          docDots.appendChild(dot);
+        });
+      }
+
+      function goToStep(idx) {
+        currentStep = Math.max(0, Math.min(idx, currentSteps.length - 1));
+        docTrack.style.transform = 'translateX(-' + (currentStep * 100) + '%)';
+        stepBadge.textContent = 'Step ' + (currentStep + 1) + ' of ' + currentSteps.length;
+        stepDesc.textContent = currentSteps[currentStep].desc;
+
+        // Hapus link lama jika ada
+        var existingLink = document.getElementById('projDocStepLink');
+        if (existingLink) { existingLink.remove(); }
+
+        // Render hyperlink jika step ini punya link
+        var stepData = currentSteps[currentStep];
+        if (stepData.link) {
+          var a = document.createElement('a');
+          a.id        = 'projDocStepLink';
+          a.href      = stepData.link.url;
+          a.textContent = stepData.link.label;
+          a.target    = '_blank';
+          a.rel       = 'noopener noreferrer';
+          a.className = 'proj-doc-step-link';
+          stepDesc.insertAdjacentElement('afterend', a);
+        }
+
+        var dots = docDots.querySelectorAll('.proj-doc-dot');
+        dots.forEach(function (d, i) { d.classList.toggle('active', i === currentStep); });
+        docPrev.disabled = currentStep === 0;
+        docNext.disabled = currentStep === currentSteps.length - 1;
+      }
+
+      function openModal(projectId) {
+        var proj = projects[projectId];
+        if (!proj) return;
+        currentSteps = proj.steps;
+        modalTag.textContent = proj.tag;
+        modalTitle.textContent = proj.title;
+        buildDocCarousel(proj.steps);
+        overlay.removeAttribute('hidden');
+        setTimeout(function () { overlay.classList.add('open'); }, 10);
+        document.body.style.overflow = 'hidden';
+        goToStep(0);
+        closeBtn.focus();
+      }
+
+      function closeModal() {
+        overlay.classList.remove('open');
+        setTimeout(function () {
+          overlay.setAttribute('hidden', '');
+          document.body.style.overflow = '';
+        }, 350);
+      }
+
+      document.querySelectorAll('.see-more-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          openModal(parseInt(this.getAttribute('data-project-id')));
+        });
+      });
+
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) closeModal();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !overlay.hasAttribute('hidden')) closeModal();
+        if (overlay.hasAttribute('hidden')) return;
+        if (e.key === 'ArrowRight') { e.preventDefault(); goToStep(currentStep + 1); }
+        if (e.key === 'ArrowLeft') { e.preventDefault(); goToStep(currentStep - 1); }
+      });
+
+      docPrev.addEventListener('click', function () { goToStep(currentStep - 1); });
+      docNext.addEventListener('click', function () { goToStep(currentStep + 1); });
 
       /* ==================
          SMOOTH ANCHOR LINKS
